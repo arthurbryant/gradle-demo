@@ -17,3 +17,8 @@ task copy(type: Copy, group: "Custom", description: "copy from src to dest") {
     from "src"
     into "dest"
 }
+
+task zip(type: Zip, group: 'Deploy', description: "Archives sources in a zip file.") {
+    from "src"
+    setArchiveName "gradle-demo-1.0.zip"
+}
