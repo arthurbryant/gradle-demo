@@ -8,3 +8,8 @@
 wrapper {
     distributionType = Wrapper.DistributionType.ALL
 }
+
+task copy(type: Copy, group: "Custom", description: "copy from src to dest") {
+    from "src"
+    into "dest"
+}
